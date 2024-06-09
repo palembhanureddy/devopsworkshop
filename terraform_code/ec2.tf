@@ -107,7 +107,7 @@ module "sgs" {
     source = "../sg_eks"
     vpc_id     =     "aws_vpc.dpp-vp"
   }
-
+   
   module "eks" {
       source = "../eks"
        vpc_id     =     "aws_vpc.dpp-vpc.id"
@@ -115,3 +115,4 @@ module "sgs" {
       sg_ids = module.sgs.security_group_public
   }
 
+    
