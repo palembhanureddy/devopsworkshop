@@ -105,7 +105,7 @@ resource "aws_route_table_association" "dpp-rta-public-subnet-02" {
 }
 module "sgs" {
     source = "../sg_eks"
-    vpc_id     =     "aws_vpc" "dpp-vp"
+    vpc_id     =     "aws_vpc.dpp-vp"
   }
 
   module "eks" {
