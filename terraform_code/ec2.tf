@@ -1,4 +1,4 @@
-provider "aws" {
+provider "aws"{
     region = "ap-south-1"
 }
 
@@ -114,5 +114,5 @@ module "sgs" {
        subnet_ids = [aws_subnet.dpp-public-subnet-01.id,aws_subnet.dpp-public-subnet-02.id]
       sg_ids = module.sgs.security_group_public
   }
-
+ 
     
